@@ -8,32 +8,51 @@
 			<a class="header-link" href="about.html">About</a>
 		</div>
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	</head>
 	<body>
 		<div class="start-display">
 			<p class="start-text">Press the button when you are ready to begin your quiz!</p>
 			<button class="start-button" type="button">Start the Quiz</button>
 		</div>
+		<div class="results-display hidden">
+			<h1 class="result-text">Here are Your Results</h1>
+			<div class="results">
+			<h1 class="rank"></h1>
+			<h1 class="summary"></h1>
+			</div>
+		</div>
 		<div class="quiz-app hidden">
-			<img src="images/Theon.jpg">
+			<img class="question-image" src="images/theon.jpg">
 			<div class="quiz-question">
 				<p class="quiz-question-text">What house does Theon, ward of Eddard Stark, hail from?</p>
 			</div>
-				<div class="answer-1">
-					<p>A) House Baratheon</p>
+			<div class="correct-display hidden">
+				<h1 class="correct-text">Correct!</h1>
+				<p class="correct-explainer"></p>
+			</div>
+			<div class="incorrect-display hidden">
+				<h1 class="incorrect-text">Incorrect</h1>
+				<p class="incorrect-explainer"></p>
+			</div>
+			<div class="explainer hidden">
+				<p class="explainer-text"></p>
+			</div>
+				<div class="answer-a">
+					<p>A. House Baratheon</p>
 				</div>
-				<div class="answer-2">
-					<p>B) House Greyjoy</p>
+				<div class="answer-b">
+					<p>B. House Greyjoy</p>
 				</div>
-				<div class="answer-3">
-					<p>C) House Tully</p>
+				<div class="answer-c">
+					<p>C. House Tully</p>
 				</div>
-				<div class="answer-4">
-					<p>D) House Martell</p>
+				<div class="answer-d">
+					<p>D. House Martell</p>
 				</div>
 			<div class="score-tracker">
-				<h2 class="correct">Correct:0</h2>
-				<h2 class="missed">Missed:0</h2>
+				<h2 class="correct">Correct: 0</h2>
+				<h2 class="missed">Missed: 0</h2>
 				<h2 class="current-question">Current Question: 1</h2>
 				<h2 class="remaining">Remaining:10</h2>
 			</div>

@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
 }
 
 h1 {
@@ -63,30 +64,41 @@ img {
 	text-align: center;
 }
 
-.answer-1, .answer-2, .answer-3, .answer-4 {
+.answer-a, .answer-b, .answer-c, .answer-d {
 	font-size: 1.2em;
 	text-align: center;
 	border: 1px solid grey;
 }
 
-.answer-1:hover, .answer-2:hover, .answer-3:hover, .answer-4:hover {
+.answer-a:hover, .answer-b:hover, .answer-c:hover, .answer-d:hover {
 	background-color: lightgrey;
 }
 
-.correct, .missed{
+.correct {
 	display: inline-block;
-	text-align: left;
-	margin-right: 15px;
+	float: left;
+}
+
+.missed {
+	display: inline-block;
+	float: left;
+	margin-left: 25px;
 }
 
 .remaining {
 	display: inline-block;
-	margin-left: 15px;
+	float: right;
+	margin-right: 25px;
 }
 
 .current-question {
 	display: inline-block;
-	margin-left: 199px;
+	float: right;
+}
+
+.score-tracker {
+	width: 800px;
+	height: 75px;
 }
 
 .next-button {
@@ -102,3 +114,46 @@ img {
 	display: none;
 }
 
+.correct-display {
+	text-align: center;
+}
+
+.correct-text {
+	color: green;
+}
+
+.incorrect-display {
+	text-align: center;
+}
+
+.incorrect-text {
+	color: red;
+}
+
+.result-text {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.results-display {
+	margin-top: 100px;
+}
+
+.rank {
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 50px;
+}
+
+.summary {
+	text-align: center;
+}
+
+.explainer-text {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.explainer {
+	border: 1px solid grey;
+}
