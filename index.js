@@ -66,7 +66,7 @@ function renderQuestions(){
 		$('.answer-d').find('p').text(state.questions[state.current].choices[3]);
 		$('.question-image').attr('src',state.questions[state.current].image);
 	} else {
-		$('.results-display').removeClass('hidden');
+		$('.results-display, .restart, .restart-button').removeClass('hidden');
 		$('.question-image, .quiz-question-text, .answer-a, .answer-b, .answer-c, .answer-d, .correct-display, .incorrect-display, .score-tracker, .next-button, .explainer').addClass('hidden');
 		renderRank();
 	}
@@ -158,6 +158,10 @@ $('.next-button').on('click', function() {
 	state.remaining -= 1;
 	renderQuestions();
 	renderScores();
+})
+// Restart by reloading the homepage
+$('.restart-button').on('click', function() {
+	location.href='index.html';
 })
 
 //Question Generation

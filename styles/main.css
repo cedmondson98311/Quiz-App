@@ -157,3 +157,15 @@ img {
 .explainer {
 	border: 1px solid grey;
 }
+
+.restart-button {
+	margin-top: 25px;
+	margin-left: 350px;
+	font-size: 2em;
+}
+
+.restart {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
